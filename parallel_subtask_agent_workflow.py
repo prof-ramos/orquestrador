@@ -15,7 +15,7 @@ from typing import Optional, List, Literal, Dict, Any, Callable, TypeVar, Awaita
 
 import together
 from together import AsyncTogether, Together
-from pydantic import Field, BaseModel, ValidationError
+from pydantic import Field, BaseModel
 from dotenv import load_dotenv
 
 # Configuração de logging
