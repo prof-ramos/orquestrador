@@ -12,7 +12,6 @@ import os
 import functools
 import logging
 from typing import Optional, List, Literal, Dict, Any, Callable, TypeVar, Awaitable
-from datetime import datetime
 
 import together
 from together import AsyncTogether, Together
@@ -42,7 +41,7 @@ class LLMCallError(OrchestratorError):
     """Erro ao realizar chamadas para o modelo de linguagem."""
     pass
 
-class ValidationError(OrchestratorError):
+class OrchestratorValidationError(OrchestratorError):
     """Erro na validação de dados ou esquemas JSON."""
     pass
 
@@ -144,7 +143,7 @@ class LLMClient:
             )
             return json.loads(response.choices[0].message.content)
         except Exception as e:
-            raise ValidationError(f"Falha ao obter resposta estruturada: {e}") from e
+            raise OrchestratorValidationError(f"Falha ao obter resposta estruturada: {e}") from e
 
 class AgentOrchestrator:
     """Orquestrador principal do fluxo de trabalho."""
