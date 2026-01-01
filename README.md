@@ -9,12 +9,18 @@ resultados são finalmente sintetizados.
 - Python 3.10 ou superior
 - Uma chave de API da [Together AI](https://www.together.ai/)
 
-## Instalação
+## Instalação e Execução com uv
 
-1. Instale as dependências necessárias:
+Este projeto utiliza o [uv](https://github.com/astral-sh/uv) para gerenciamento de dependências e
+ambiente virtual.
+
+1. Se você ainda não tem o `uv`, instale-o seguindo as
+   [instruções oficiais](https://github.com/astral-sh/uv).
+
+2. Sincronize as dependências:
 
 ```bash
-pip install -U pydantic together
+uv sync
 ```
 
 ## Configuração
@@ -25,15 +31,12 @@ Você deve configurar sua chave de API da Together AI como uma variável de ambi
 export TOGETHER_API_KEY='sua_chave_aqui'
 ```
 
-Alternativamente, você pode editar o arquivo `parallel_subtask_agent_workflow.py` e inserir sua
-chave diretamente na variável `TOGETHER_API_KEY` (não recomendado para produção).
-
 ## Como Executar
 
-Para iniciar o script, execute o seguinte comando:
+Para iniciar o script utilizando o ambiente gerenciado pelo `uv`, execute:
 
 ```bash
-python parallel_subtask_agent_workflow.py
+uv run parallel_subtask_agent_workflow.py
 ```
 
 O script realizará as seguintes etapas:
