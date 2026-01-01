@@ -1,18 +1,19 @@
-<!-- markdownlint-disable MD033 MD041 -->
+<!-- markdownlint-disable MD033 -->
 
-<a name="readme-top"></a>
+# <a id="readme-top"></a>Orquestrador de Agentes IA
 
 <!-- PROJECT SHIELDS -->
+<div align="center">
 
 [![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+</div>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">Orquestrador de Agentes IA</h3>
-
   <p align="center">
     Um fluxo de trabalho assíncrono e resiliente para orquestração de subtarefas usando LLMs.
     <br />
@@ -108,7 +109,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
      ```
 
    - Adicione sua chave da Together AI:
-
      ```env
      TOGETHER_API_KEY="sua-chave-aqui"
      ```
