@@ -25,7 +25,17 @@ uv sync
 
 ## Configuração
 
-Você deve configurar sua chave de API da Together AI como uma variável de ambiente:
+Você deve configurar sua chave de API da Together AI. Você pode fazer isso de duas formas:
+
+### 1. Usando um arquivo .env (Recomendado)
+
+Crie um arquivo chamado `.env` na raiz do projeto e adicione sua chave:
+
+```env
+TOGETHER_API_KEY='sua_chave_aqui'
+```
+
+### 2. Usando variável de ambiente direta
 
 ```bash
 export TOGETHER_API_KEY='sua_chave_aqui'

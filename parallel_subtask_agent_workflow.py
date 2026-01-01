@@ -34,7 +34,11 @@ import json
 import asyncio
 import together
 import os
+from dotenv import load_dotenv
 from together import AsyncTogether, Together
+
+# Carregar variáveis de ambiente do arquivo .env
+load_dotenv()
 
 from typing import Optional, List, Literal
 from pydantic import Field, BaseModel, ValidationError
