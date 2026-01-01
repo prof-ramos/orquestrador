@@ -49,6 +49,15 @@ Para iniciar o script utilizando o ambiente gerenciado pelo `uv`, execute:
 uv run parallel_subtask_agent_workflow.py
 ```
 
+## Testes Automatizados
+
+Este projeto inclui uma suíte de testes unitários para garantir a resiliência do fluxo. Para rodar
+os testes:
+
+```bash
+PYTHONPATH=. uv run pytest
+```
+
 O script realizará as seguintes etapas:
 
 1. **Orquestração**: Analisará a tarefa principal e criará um plano com 2-3 subtarefas
