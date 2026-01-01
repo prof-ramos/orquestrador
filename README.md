@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 MD041 -->
+
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
@@ -85,23 +87,31 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### Instalação
 
-1.  Clone o repositório
-    ```sh
-    git clone https://github.com/prof-ramos/orquestrador.git
-    ```
-2.  Instale as dependências
-    ```sh
-    uv sync
-    ```
-3.  Configure sua chave de API
-    - Crie um arquivo `.env` na raiz do projeto:
-      ```sh
-      cp .env.example .env
-      ```
-    - Adicione sua chave da Together AI:
-      ```env
-      TOGETHER_API_KEY="sua-chave-aqui"
-      ```
+1. Clone o repositório
+
+   ```sh
+   git clone https://github.com/prof-ramos/orquestrador.git
+   ```
+
+2. Instale as dependências
+
+   ```sh
+   uv sync
+   ```
+
+3. Configure sua chave de API
+
+   - Crie um arquivo `.env` na raiz do projeto:
+
+     ```sh
+     cp .env.example .env
+     ```
+
+   - Adicione sua chave da Together AI:
+
+     ```env
+     TOGETHER_API_KEY="sua-chave-aqui"
+     ```
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
@@ -117,10 +127,10 @@ uv run parallel_subtask_agent_workflow.py
 
 O sistema irá:
 
-1.  Analisar a tarefa complexa.
-2.  Gerar um plano de ação (Task Decomposition).
-3.  Executar subtarefas em paralelo.
-4.  Sintetizar a resposta final.
+1. Analisar a tarefa complexa.
+2. Gerar um plano de ação (Task Decomposition).
+3. Executar subtarefas em paralelo.
+4. Sintetizar a resposta final.
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
